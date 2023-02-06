@@ -15,8 +15,8 @@ const queueURL = QUEUE_URL + "/" + QUEUE_TESTE_NAME;
 
 const params = {
   // Remove DelaySeconds parameter and value for FIFO queues
-  DelaySeconds: 10,
-  MessageBody: JSON.stringify({ data: "teste data", id: randomUUID() }),
+  DelaySeconds: 5,
+  MessageBody: JSON.stringify({ data: "teste data 3", id: randomUUID() }),
 
   // MessageDeduplicationId: "TheWhistler",  // Required for FIFO queues
   // MessageGroupId: "Group1",  // Required for FIFO queues
